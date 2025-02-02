@@ -456,7 +456,7 @@
         </ray>
         <!-- Using gazebo's update rate instead of plugin's -->
         <update_rate>40</update_rate>
-    
+
         <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
           <!-- Change namespace and output topic so published topic is /rrbot/laser/scan -->
           <ros>
@@ -670,9 +670,9 @@
           <joint_control_type>position</joint_control_type>
           <joint_name>front_left_steering_joint</joint_name>
           <joint_control_pid>
-            <p>80</p>
-            <i>40</i>
-            <d>0.1</d>
+            <p>90</p> <!-- 90 -->
+            <i>0.001</i> <!-- 0.001 -->
+            <d>5.75</d> <!-- 5.75 -->
             <iMax>40</iMax>
             <iMin>-40</iMin>
             <cmdMax>80</cmdMax>
@@ -688,9 +688,9 @@
           <joint_control_type>position</joint_control_type>
           <joint_name>front_right_steering_joint</joint_name>
           <joint_control_pid>
-            <p>80</p>
-            <i>40</i>
-            <d>0.1</d>
+            <p>90</p>
+            <i>0.001</i>
+            <d>5.75</d>
             <iMax>40</iMax>
             <iMin>-40</iMin>
             <cmdMax>80</cmdMax>
